@@ -1,0 +1,20 @@
+{
+  "data": [
+    { 
+      "345",
+      "Kipas Anginnnnnn",
+      "Marsudin",
+      "2 Agustus 2022",
+      "Udin",
+      "Proses"
+    },
+    {
+      "234",
+      "Kipas udin",
+      "Marsudin",
+      "2 Agustus 2022",
+      "Udin",
+      "Proses"
+    }
+  ]
+}

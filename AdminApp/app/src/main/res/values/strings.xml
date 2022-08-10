@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Admin Indotek</string>
+    <string name="judul">CV. Indotek Sinar Makmur</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="registrasi">REGISTRASI</string>
+    <string name="judul_home">Request Upload Foto mesin</string>
+    <string name="jwttoken">jwttoken</string>
+    <string name="namauser">namauser</string>
+    <string name="namasp">com.imaa.jwttoken</string>
+    <string name="linkapi">linkapi</string>
+    <string name="link_api">Link API</string>
+    <string name="save_link_api">SAVE LINK API</string>
+    <string name="hint_linkapi">https://0fdf-114-124-213-95.ngrok.io/</string>
+</resources>

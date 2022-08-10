@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg"
+    tools:context=".activities.DetailMesinActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/darkgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivbtnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="@color/maroon" />
+
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Orderan Baru"
+        android:textColor="@color/maroon"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/ivbtnback"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+<androidx.core.widget.NestedScrollView
+    app:layout_constraintTop_toBottomOf="@id/view"
+    app:layout_constraintBottom_toTopOf="@id/tvbtnaksi"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingVertical="20dp"
+        android:clipToPadding="false">
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Foto Mesin"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivbefore"
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivafter"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/plivbefore"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:text="Foto Mesin"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/ivbefore"
+                app:layout_constraintEnd_toEndOf="@+id/ivbefore"
+                app:layout_constraintStart_toStartOf="@+id/ivbefore"
+                app:layout_constraintTop_toTopOf="@+id/ivbefore" />
+
+
+
+            <ImageView
+                android:id="@+id/ivafter"
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivbefore"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tvbtnivafter"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Upload Foto Terbaru Mesin"
+                android:textAlignment="center"
+                android:background="@color/maroon"
+                android:paddingVertical="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ivafter"
+                app:layout_constraintEnd_toEndOf="@+id/ivafter"
+                app:layout_constraintStart_toStartOf="@+id/ivafter"
+                app:layout_constraintTop_toTopOf="@+id/ivafter" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="@string/jenis_mesin"/>
+        <TextView
+            android:id="@+id/tvjenis"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Jenis Mesin"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="@string/merek_mesin"/>
+        <TextView
+            android:id="@+id/tvmerek"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Merek Mesin"/>
+
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="@string/keterangan_pemilik"/>
+        <TextView
+            android:id="@+id/tvketerangan"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Keterangan"/>
+        <TextView
+            android:id="@+id/tvlabelselesai"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Selesai Dalam"/>
+        <LinearLayout
+            android:id="@+id/llestselesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv1hari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+                <TextView
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1_hari"
+                    android:textSize="18dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv2hari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+                <TextView
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_2_hari"
+                    android:textSize="18dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv3hari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+                <TextView
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_3_hari"
+                    android:textSize="18dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvestselesai"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="1 hari"/>
+        <TextView
+            android:id="@+id/tvlabeldiagnosa"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="@string/diagnosa"/>
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="6dp"
+            android:id="@+id/cvdiagnosa"
+            android:layout_marginHorizontal="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardElevation="10dp">
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/etdiagnosa"
+                android:background="@color/white"
+                android:hint="@string/contoh_gulung_dinamo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tvdiagnosa"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Diagnosa"/>
+        <TextView
+            android:id="@+id/tvlabelbiaya"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="@string/biaya"/>
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="6dp"
+            android:id="@+id/cvbiaya"
+            android:layout_marginHorizontal="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardElevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Rp. "
+                    android:textSize="18dp"/>
+                <EditText
+                    android:padding="5dp"
+                    android:id="@+id/etbiaya"
+                    android:inputType="number"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tvbiaya"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Biaya"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/tvbtnaksi"
+        android:gravity="center"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:text="Daftar"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llloading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/logoanim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avd_anim_logo_indotek"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

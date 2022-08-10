@@ -1,0 +1,18 @@
+{
+  "data": [
+    [ 
+      "345",
+      "Marsudin",
+      "Bekasi",
+      "Kipas",
+      "3"
+    ],
+    [
+      "234",
+      "Marsunoh",
+      "Jakarta",
+      "Gulung Dinamo",
+      "2"
+    ]
+  ]
+}

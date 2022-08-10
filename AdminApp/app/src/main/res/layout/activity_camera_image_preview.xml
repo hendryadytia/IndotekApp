@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CameraImagePreview">
+    <LinearLayout
+        android:paddingLeft="12dp"
+      android:id="@+id/lldetail"
+      android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_ulang"
+      android:layout_width="0dp"
+      android:layout_height="80dp">
+
+      <TextView
+          android:id="@+id/jenismesin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="16dp"
+          android:text="jenis mesin"/>
+      <View
+          android:layout_width="0dp"
+          android:layout_height="5dp"/>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16dp"
+              android:text="Merek: "/>
+          <TextView
+              android:id="@+id/merek"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16dp"
+              android:text="Merek"/>
+
+      </LinearLayout>
+      <View
+          android:layout_width="0dp"
+          android:layout_height="5dp"/>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16dp"
+              android:text="Pemilik: "/>
+          <TextView
+              android:id="@+id/pemilik"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16dp"
+              android:text="Udin"/>
+      </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+  </LinearLayout>
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lldetail"
+        android:id="@+id/previewiv"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <TextView
+        android:id="@+id/btn_kirim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="KIRIM"
+        android:textColor="@color/white"
+        android:background="@color/maroon"/>
+    <TextView
+        android:id="@+id/btn_ulang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_kirim"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="5dp"
+        android:text="ULANG"
+        android:textColor="@color/white"
+        android:background="@color/maroon"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
